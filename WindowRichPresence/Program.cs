@@ -59,7 +59,7 @@ namespace WindowRichPresence
             client.OnReady += (sender, e) =>
             {
                 Console.WriteLine("Received connection from {0}", e.User.Username);
-            }
+            };
             client.OnPresenceUpdate += (sender, e) =>
             {
                 Console.WriteLine("Received Update! {0}", e.Presence);
